@@ -1,0 +1,354 @@
+.what-w {
+   padding-bottom: 60px;
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      padding-bottom: 40px;
+   }
+
+   .container {
+      /* Mobile small */
+      @media (max-width: 374px) {
+         width: 320px !important;
+      }
+   }
+   .section-title {
+      margin-bottom: 35px;
+      text-align: center;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         margin-bottom: 25px;
+      }
+   }
+   .cards-row {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 27px;
+      row-gap: 40px;
+
+      /* Tablet Big */
+      @media (max-width: 1200px) {
+         justify-content: center;
+         column-gap: 40px;
+      }
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         row-gap: 20px;
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         column-gap: 19px;
+      }
+   }
+
+   .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 385px;
+
+      .btn-border {
+         transform: translateY(-50%);
+         line-height: 35px;
+         border: 5px solid #ffffff;
+         transition: 0.2s linear;
+
+         /* Tablet Small*/
+         @media (max-width: 899px) {
+            width: 200px;
+         }
+
+         /* Mobile */
+         @media (max-width: 599px) {
+            width: unset;
+         }
+
+         /* Mobile */
+         @media (max-width: 374px) {
+         }
+      }
+
+      /* Tablet Big */
+      @media (max-width: 1239px) {
+         width: 372px;
+      }
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         width: 265px;
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         width: 163px;
+      }
+
+      /* Mobile */
+      @media (max-width: 374px) {
+         width: 100%;
+      }
+   }
+   .card__img {
+      width: 100%;
+   }
+   .card__img img {
+      max-width: 100%;
+   }
+
+   .card__descr {
+      font-weight: 300;
+      font-size: 18px;
+      color: #000000;
+
+      /* Descktop small */
+      @media (max-width: 899px) {
+         font-size: 17px;
+         transform: translateY(-40%);
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         transform: translateY(-30%);
+      }
+   }
+}
+
+.card__popup {
+   display: none;
+}
+
+.card__popup.active {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 6;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card__popup-content {
+   position: relative;
+   width: 60%;
+   height: 80%;
+   background-color: #10797f;
+   overflow-y: scroll;
+
+   padding: 17px 31px 34px;
+
+   font-weight: 300;
+   font-size: 17px;
+   line-height: 1.47;
+   color: #ffffff;
+
+   @media (min-width: 1600px) {
+      height: 60%;
+   }
+
+   h3 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+
+      /* Mobile */
+      @media (max-width: 629px) {
+         font-size: 20px;
+      }
+   }
+
+   p + p {
+      margin-top: 10px;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      width: 90%;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      font-size: 18px;
+      h3 {
+         font-size: 20px;
+      }
+   }
+
+   .close-popup {
+      position: absolute;
+      top: 17px;
+      right: 18px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 6;
+
+      /* Mobile */
+      @media (max-width: 399px) {
+         right: 10px;
+      }
+
+      /* Mobile */
+      @media (max-width: 374px) {
+         top: 0px;
+         right: 8px;
+      }
+   }
+}
+
+// popup rool
+.rools-popup {
+   display: none;
+}
+
+.rools-popup.active {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 6;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.rool-popup__content {
+   position: relative;
+   width: 70%;
+   height: 50%;
+   background-color: #10797f;
+   overflow-y: scroll;
+
+   padding: 17px 31px 34px;
+
+   font-weight: 300;
+   font-size: 17px;
+   line-height: 1.47;
+   color: #ffffff;
+
+   /* Tablet Small*/
+   @media (max-width: 649px) {
+      width: 60%;
+      // height: 80%;
+   }
+   /* Tablet Small*/
+   @media (max-width: 559px) {
+      width: 80%;
+      // height: 80%;
+   }
+   /* Tablet Small*/
+   @media (max-width: 409px) {
+      font-size: 16px;
+   }
+   /* Tablet Small*/
+   @media (max-width: 349px) {
+      height: 60%;
+      font-size: 14px;
+   }
+   h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         font-size: 20px;
+      }
+      /* Tablet Small*/
+      @media (max-width: 749px) {
+         font-size: 18px;
+      }
+   }
+}
+
+.rools-popup__close {
+   position: absolute;
+   top: 17px;
+   right: 18px;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   z-index: 6;
+
+   /* Tablet Small*/
+   @media (max-width: 1199px) {
+      right: 10px;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      top: 0;
+   }
+}
+
+// Buttons
+
+.what-w__btn-wrapper {
+   display: flex;
+   justify-content: center;
+   column-gap: 45px;
+   align-items: center;
+   margin-bottom: 66px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      row-gap: 25px;
+      margin-bottom: 50px;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      margin-bottom: 40px;
+   }
+
+   .what-w__btn {
+      transform: none;
+      margin: 0;
+      padding: 0 25px;
+      width: 302px;
+      height: 45px;
+      background: #d9c5bc;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      border: none;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+
+      transition: background-color 0.2s linear;
+
+      &:hover,
+      :focus {
+         background: #edc2ad;
+      }
+      &:active {
+         background: #cb967c;
+      }
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         width: 60%;
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         width: 100%;
+      }
+   }
+}

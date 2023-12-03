@@ -1,0 +1,16 @@
+.nav-button {
+   display: none;
+}
+
+@media (max-width: 899px) {
+   .nav-button {
+      display: inline-block;
+   }
+
+   .nav-button.active {
+      position: fixed;
+      z-index: 7;
+      top: 30px;
+      right: 15px;
+   }
+}

@@ -1,0 +1,131 @@
+@font-face {
+   font-family: "Futura PT";
+   src: local("Futura PT Light"), local("FuturaPT-Light"),
+      url(../fonts/FuturaPT-Light/FuturaPT-Light.woff2) format("woff2"),
+      url(../fonts/FuturaPT-Light/FuturaPT-Light.woff) format("woff"),
+      url(../fonts/FuturaPT-Light/FuturaPT-Light.ttf) format("ttf"),
+      url(../fonts/FuturaPT-Light/FuturaPT-Light.svg#FuturaPT-Light)
+         format("svg"),
+      url(../fonts/FuturaPT-Light/FuturaPT-Light.otf) format("otf"),
+      url(../fonts/FuturaPT-Light/FuturaPT-Light.eot) format("eot");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Futura PT";
+   src: local("Futura PT Book"), local("FuturaPT-Book"),
+      url(../fonts/FuturaPT-Book/FuturaPT-Book.woff2) format("woff2"),
+      url(../fonts/FuturaPT-Book/FuturaPT-Book.woff) format("woff"),
+      url(../fonts/FuturaPT-Book/FuturaPT-Book.ttf) format("ttf"),
+      url(../fonts/FuturaPT-Book/FuturaPT-Book.svg#FuturaPT-Book) format("svg"),
+      url(../fonts/FuturaPT-Book/FuturaPT-Book.otf) format("otf"),
+      url(../fonts/FuturaPT-Book/FuturaPT-Book.eot) format("eot");
+   font-weight: 350;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Futura PT";
+   src: local("Futura PT Bold"), local("FuturaPT-Bold"),
+      url(../fonts/FuturaPT-Bold/FuturaPT-Bold.woff2) format("woff2"),
+      url(../fonts/FuturaPT-Bold/FuturaPT-Bold.woff) format("woff"),
+      url(../fonts/FuturaPT-Bold/FuturaPT-Bold.ttf) format("ttf"),
+      url(../fonts/FuturaPT-Bold/FuturaPT-Bold.svg#FuturaPT-Book) format("svg"),
+      url(../fonts/FuturaPT-Bold/FuturaPT-Bold.otf) format("otf"),
+      url(../fonts/FuturaPT-Bold/FuturaPT-Bold.eot) format("eot");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+html {
+   min-height: 100vh; /* sticky footer */
+   scroll-behavior: smooth;
+}
+
+body {
+   min-height: 100vh; /* sticky footer */
+   display: flex; /* sticky footer */
+   flex-direction: column; /* sticky footer */
+
+   font-family: "Futura PT", sans-serif;
+   color: #000;
+   font-size: 18px;
+   font-weight: 300;
+
+   text-rendering: optimizeSpeed;
+   //text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body > * {
+   flex-shrink: 0; /* sticky footer */
+}
+
+section {
+   // position: relative;
+}
+
+/* Grid styles */
+
+.container {
+   max-width: 1240px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+
+   /* Tablet */
+   @media (max-width: 1159px) {
+      width: 900px;
+   }
+
+   /* Mobile Big*/
+   @media (max-width: 899px) {
+      width: 600px;
+   }
+
+   /* Mobile medium */
+   @media (max-width: 599px) {
+      width: 375px;
+   }
+   /* Mobile small */
+   @media (max-width: 374px) {
+      width: 320px;
+   }
+}
+
+/* Utility */
+
+.none {
+   display: none !important;
+}
+
+.visually-hidden {
+   opacity: 0;
+   visibility: hidden;
+   width: 0px;
+   height: 0px;
+   display: block;
+   margin-left: -10000px;
+   background: transparent;
+   font-size: 0;
+}
+
+.br {
+}
+
+.scroll-menu {
+   overflow: hidden;
+}
+
+/* Sticky Footer */
+
+.footer {
+   margin-top: auto; /* sticky footer */
+}

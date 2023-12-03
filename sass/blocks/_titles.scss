@@ -1,0 +1,26 @@
+.main-title {
+   font-weight: 700;
+   font-size: 64px;
+   color: #ffffff;
+}
+
+.section-title {
+   font-weight: 700;
+   font-size: 35px;
+   color: #000000;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 30px;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      font-size: 28px;
+   }
+
+   /* Mobile */
+   @media (max-width: 376px) {
+      font-size: 25px;
+   }
+}

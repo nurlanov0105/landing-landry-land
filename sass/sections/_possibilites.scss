@@ -1,0 +1,316 @@
+.possibilites {
+   position: relative;
+   padding-top: 130px;
+   padding-bottom: 60px;
+   .section-title {
+      margin-bottom: 36px;
+      text-align: center;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         font-size: 30px;
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         font-size: 25px;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      padding-top: 40px;
+      padding-bottom: 56px;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      padding-bottom: 40px;
+   }
+}
+
+.possibilites__row {
+   display: flex;
+   column-gap: 60px;
+   margin-bottom: 33px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: center;
+      margin-bottom: 100px;
+   }
+}
+.possibilites__list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 26px;
+}
+.possibilites__list-item {
+   position: relative;
+   min-width: 590px;
+   padding-left: 53px;
+   font-weight: 300;
+   font-size: 18px;
+   color: #000000;
+
+   &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/possibilites/plus.svg");
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      min-width: unset;
+   }
+}
+.possibilites__map {
+   width: 594px;
+   height: 299px;
+   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+   border-radius: 15px;
+   z-index: 2;
+
+   /* Mobile */
+   @media (max-width: 899px) {
+      width: 100%;
+   }
+}
+
+.possibilites__contacts {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   z-index: 3;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      justify-content: center;
+   }
+}
+.possibilites__adress {
+   position: relative;
+   padding: 0 45px;
+   width: 681px;
+   height: 65px;
+   line-height: 70px;
+   font-weight: 400;
+   font-size: 19px;
+   text-align: center;
+   text-transform: uppercase;
+
+   background-color: #ede2cf;
+   border-radius: 5px;
+   transition: background-color 0.2s linear;
+
+   .br {
+      display: none;
+   }
+
+   &:hover,
+   :focus {
+      background-color: #f2dcba;
+   }
+
+   &:active {
+      background-color: #cab89c;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 5%;
+      transform: translateY(-90%);
+      width: 191px;
+      height: 191px;
+      background-image: url("../img/possibilites/girl.png");
+      z-index: -1;
+
+      /* Tablet Big */
+      @media (max-width: 1159px) {
+         right: 18%;
+      }
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         right: unset;
+         left: 8%;
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         left: 0;
+      }
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      transform: translateY(-84%);
+      right: -18%;
+      width: 260px;
+      height: 250px;
+      background-image: url(../img/possibilites/arrow-line.svg);
+      z-index: -2;
+
+      /* Tablet Big */
+      @media (max-width: 1159px) {
+         top: -312%;
+         transform: rotate(320deg);
+         right: -18%;
+      }
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         right: unset;
+         left: 50%;
+         top: -275%;
+         transform: rotate(278deg);
+      }
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         left: 21%;
+         top: -279%;
+         transform: rotate(270deg);
+      }
+
+      /* Mobile */
+      @media (max-width: 374px) {
+         left: 8%;
+         top: -280%;
+      }
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1230px) {
+      max-width: 630px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 100%;
+      line-height: 1.3;
+      font-size: 17px;
+
+      display: flex;
+      align-items: center;
+   }
+}
+.possibilites__social {
+   display: flex;
+   column-gap: 13px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      display: none;
+   }
+}
+.possibilites__social-img {
+   width: 65px;
+   height: 65px;
+   transition: 0.2s linear;
+
+   &:hover {
+      opacity: 0.8;
+   }
+
+   img {
+      max-width: 100%;
+      object-fit: cover;
+   }
+}
+.possibilites__social-tel {
+   padding: 0 45px;
+   height: 65px;
+   font-weight: 700;
+   font-size: 31px;
+   line-height: 65px;
+   color: #ffffff;
+   background-color: #d9c5bc;
+   border-radius: 5px;
+
+   transition: background-color 0.2s linear;
+
+   &:hover,
+   :focus {
+      background-color: #f2dcba;
+   }
+
+   &:active {
+      background-color: #cab89c;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      display: none;
+   }
+}
+
+.possibilites__cards {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -65%);
+
+   display: flex;
+   column-gap: 45px;
+   color: #fff;
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      column-gap: 25px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      position: static;
+      transform: unset;
+      margin-bottom: 45px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      flex-direction: column;
+      row-gap: 10px;
+   }
+}
+.possibilites__cards-item {
+   padding: 17px 30px;
+   width: 292px;
+   text-align: center;
+   background-color: #b6aeae;
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      width: 250px;
+   }
+   /* Mobile */
+   @media (max-width: 599px) {
+      width: 100%;
+   }
+}
+.cards-item__img {
+   display: inline-block;
+   margin-bottom: 10px;
+   width: 64px;
+   height: 64px;
+
+   img {
+      max-width: 100%;
+      object-fit: cover;
+   }
+}
+.cards-item__descr {
+   text-align: center;
+   font-weight: 300;
+   font-size: 18px;
+}

@@ -1,0 +1,121 @@
+.footer {
+   padding: 35px 0 25px;
+
+   text-transform: uppercase;
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      padding: 35px 0 15px;
+   }
+}
+
+.footer__row {
+   display: flex;
+   justify-content: space-between;
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      flex-direction: column;
+      row-gap: 15px;
+   }
+}
+
+.footer__links {
+   display: flex;
+   column-gap: 50px;
+   a {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.94;
+      color: #1e3240;
+
+      text-decoration-color: transparent;
+      transition: text-decoration-color 0.3s;
+
+      &:hover,
+      :focus {
+         text-decoration: underline;
+      }
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      flex-direction: column;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+}
+
+.footer__text {
+   display: flex;
+   column-gap: 43px;
+   span {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.94;
+      color: #1e3240;
+
+      /* Mobile */
+      @media (max-width: 599px) {
+         line-height: 1.5;
+      }
+   }
+
+   span:nth-child(2) {
+      font-size: 15px;
+      line-height: 1.67;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      flex-direction: column;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      row-gap: 15px;
+   }
+}
+
+.big-map {
+   .container {
+      display: inline;
+      width: 100%;
+      margin-left: unset;
+      margin-right: unset;
+      padding-left: unset;
+      padding-right: unset;
+
+      /* Mobile medium */
+      @media (max-width: 599px) {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         padding-left: 15px;
+         padding-right: 15px;
+         width: 375px;
+      }
+      /* Mobile small */
+      @media (max-width: 374px) {
+         width: 320px;
+      }
+   }
+}
+
+.big-map__map {
+   height: 416px;
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      height: 260px;
+      filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+      border-radius: 15px;
+   }
+}

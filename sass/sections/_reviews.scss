@@ -1,0 +1,131 @@
+.reviews {
+   background-color: #10797f;
+   padding: 60px 0 25px;
+   .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #fff;
+   }
+}
+
+.reviews__clients {
+   position: relative;
+   margin: 0 auto;
+   width: 867px;
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      width: 600px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 100%;
+   }
+}
+
+.slider {
+   max-width: 867px;
+}
+.slider__review {
+   margin-bottom: 21px;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 1.5;
+   text-align: center;
+   color: #ffffff;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 18px;
+   }
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      font-size: 16px;
+   }
+}
+.slider__avatar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.slider__avatar-name {
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6;
+   color: #ffffff;
+}
+.slider__avatar-btn {
+   margin-bottom: 37px;
+   display: inline-block;
+   padding: 0 40px;
+   height: 45px;
+   background: #ede2cf;
+   border-radius: 4px;
+
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 45px;
+   color: #000000;
+   transition: background-color 0.2s ease-in;
+
+   &:hover,
+   :focus {
+      background-color: #f1d8ab;
+   }
+
+   &:active {
+      background-color: #c7af82;
+   }
+}
+.slider__avatar-img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+
+   img {
+      object-fit: cover;
+   }
+}
+
+.reviews-btn {
+   position: absolute;
+   top: 15%;
+   width: 40px;
+   height: 40px;
+   transition: 0.2s linear;
+   z-index: 1;
+
+   &:hover {
+      opacity: 0.8;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      top: unset;
+      bottom: 3%;
+   }
+}
+.reviews-btn-left {
+   left: -15px;
+   transform: translate(-100%, -50%);
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      left: 0;
+      transform: translate(0, -50%);
+   }
+}
+.reviews-btn-right {
+   right: -15px;
+   transform: translate(100%, -50%);
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      transform: translate(0, -50%);
+      right: 0;
+   }
+}

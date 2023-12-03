@@ -1,0 +1,39 @@
+.header__top-row .geo {
+   padding-right: 20px;
+}
+
+.geo {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      display: none;
+   }
+}
+.geo-icon {
+   padding-left: 29px;
+   font-weight: 300;
+   font-size: 17px;
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/common-icons/marker.svg");
+   }
+}
+.geo-icon:nth-child(2) {
+   &::before {
+      background-image: url("../img/common-icons/wathes.svg");
+   }
+}
+
+.geo-icon-link {
+   cursor: pointer;
+}

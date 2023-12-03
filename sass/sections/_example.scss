@@ -1,0 +1,226 @@
+.example {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: #d9c5bc;
+   text-align: center;
+
+   /* Mobile */
+   @media (max-width: 599px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+}
+
+.example__btn {
+   display: inline-block;
+   padding: 0 38px;
+   transform: translateY(-50%);
+
+   height: 45px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 45px;
+   color: #000000;
+
+   background-color: #ede2cf;
+   border: 2px solid #ffffff;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+   border-radius: 4px;
+   transition: background-color 0.2s linear;
+   cursor: pointer;
+
+   /* Mobile Small */
+   @media (max-width: 374px) {
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      line-height: 1.1;
+   }
+
+   &:hover,
+   :focus {
+      background-color: #e9cd9e;
+   }
+
+   &:active {
+      background-color: #eebe6c;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      background-color: #10797f;
+      color: #fff;
+   }
+}
+.example__row {
+   display: flex;
+   column-gap: 45px;
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      column-gap: 35px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 25px;
+   }
+}
+
+.example__card {
+   width: 383px;
+   text-align: left;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 345px;
+   }
+
+   /* Mobile */
+   @media (max-width: 374px) {
+      width: 100%;
+   }
+}
+.card__video {
+   width: 100%;
+   height: 215px;
+   margin-bottom: 25px;
+
+   /* Tablet Big */
+   @media (max-width: 1159px) {
+      height: auto;
+      margin-bottom: 15px;
+   }
+}
+.card__descr {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.39;
+   color: #ffffff;
+}
+
+.example-popup {
+   display: none;
+}
+
+.example-popup.active {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 6;
+   background-color: rgba(0, 0, 0, 0.7);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.example-popup__content {
+   position: relative;
+   width: 70%;
+   height: 50%;
+   background-color: #10797f;
+   overflow-y: scroll;
+
+   padding: 17px 31px 34px;
+
+   font-weight: 300;
+   font-size: 17px;
+   line-height: 1.47;
+   color: #ffffff;
+
+   // /* Tablet Big */
+   // @media (max-width: 1159px) {
+   //    width: 70%;
+   // }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 50%;
+      // height: 80%;
+   }
+   /* Tablet Small*/
+   @media (max-width: 649px) {
+      width: 60%;
+      // height: 80%;
+   }
+   /* Tablet Small*/
+   @media (max-width: 559px) {
+      width: 80%;
+      // height: 80%;
+   }
+   /* Tablet Small*/
+   @media (max-width: 409px) {
+      font-size: 16px;
+   }
+   /* Tablet Small*/
+   @media (max-width: 349px) {
+      height: 60%;
+      font-size: 14px;
+   }
+
+   h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         font-size: 20px;
+      }
+      /* Tablet Small*/
+      @media (max-width: 749px) {
+         font-size: 18px;
+      }
+   }
+}
+.example-popup__close {
+   position: absolute;
+   top: 17px;
+   right: 18px;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   z-index: 6;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      top: 0px;
+      right: 10px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 764px) {
+      top: 0px;
+      right: 12px;
+   }
+}
+
+.example-popup-row {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   column-gap: 40px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      row-gap: 20px;
+   }
+}
+.example-popup-first {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   row-gap: 10px;
+}
+.example-popup-second {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   row-gap: 10px;
+}
